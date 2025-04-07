@@ -1,0 +1,506 @@
+$main: #EEE1A4;
+$second: #a2ae00;
+
+.body-auth{
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    background: #1E1E1E;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+
+.copiright{
+    background: white;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 16px;
+
+    &-link{
+        font-weight: bold;
+        color: $second;
+        text-decoration: none;
+
+        &:hover{
+            color: $second;
+        }
+    }
+}
+
+.login{
+    height: 100vh;
+
+    &__inner{
+        backdrop-filter: blur(10px);
+        background: rgba(135, 135, 135, 0.85);
+        padding: 20px 10px;
+        border-radius: 20px;
+    }
+
+    &__btns{
+        &-submit{
+            background: $main;
+            padding: 5px 35px;
+            border-radius: 20px;
+
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 20px;
+
+            border: 1px solid transparent;
+            outline: transparent;
+            transition: all ease-in-out .4s;
+
+            &:hover{
+                color: $main;
+                background: transparent;
+                border-color: $main;
+            }
+        }
+    }
+
+    &__title{
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        color: white;
+    }
+
+    &__label{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: white;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    &__input{
+        background: #D9D9D9;
+        border-radius: 10px;
+        padding: 10px 15px;
+        outline: transparent;
+        border: 1px solid transparent;
+    }
+}
+
+.clock{
+    color: green;
+
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.205em;
+}
+
+.dashboard{
+    &__table{
+        border: 1px solid white;
+        overflow: hidden;
+        border-radius: 15px 15px 0 0;
+
+        &-header{
+            background: white;
+            padding: 10px 20px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        &-counter{
+            background: $second;
+            padding: 5px 20px;
+            border-radius: 20px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        &-item{
+            color: white;
+        }
+    }
+    &__stats{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+
+        &-inner{
+            display: grid;
+            grid-template-columns: 55px calc(100% - 55px);
+            gap: 2px;
+        }
+
+        &-value{
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+    &__header{
+        background: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+
+        &-exit{
+            padding: 5px 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            background: $second;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            border: 1px solid transparent;
+
+            transition: all ease-in-out .4s;
+
+            &:hover{
+                background: transparent;
+                border-color: $second;
+                color: $second;
+            }
+        }
+
+        &-link{
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+            color: black;
+
+            position: relative;
+
+            &::before{
+                content: '';
+                background: $second;
+                height: 4px;
+
+                position: absolute;
+                left: 0;
+                bottom: -18px;
+            }
+
+            &:hover::before{
+                width: 100%;
+            }
+
+            &:hover{
+                color: $second;
+            }
+
+            &:hover svg * {
+                fill: $second;
+            }
+
+            &+&{
+                margin-left: 20px;
+
+                @media (max-width: 992px) {
+                    &{
+                        margin-top: 15px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    &__module{
+        background: white;
+        padding: 10px;
+        border-radius: 20px;
+
+        &-label{
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;
+            color: black;
+        }
+    }
+    &__user{
+        display: grid;
+        grid-template-columns: 55px calc(100% - 55px);
+        gap: 10px;
+
+        &-text{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: black;
+        }
+
+        &-info{
+            margin: 0;
+            padding: 0;
+
+            &+&{
+                margin-top: 3px;
+            }
+        }
+    }
+    &__items{
+        &-inner{
+            background: white;
+            border-radius: 15px;
+        }
+
+        &-title{
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__params{
+        &-label, &-value{
+            font-size: 15px;
+            line-height: 17px;
+        }
+
+        &-value{
+            font-weight: bold;
+        }
+    }
+
+    &__btns{
+        &-green{
+            color: white;
+            background: #277602;
+            border-radius: 20px;
+            padding: 5px 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            border: 1px solid transparent;
+
+            transition: all ease-in-out .4s;
+
+            &:hover{
+                color: #277602;
+                background-color: transparent;
+                border-color: #277602;
+            }
+        }
+
+        &-red{
+            color: white;
+            background: $second;
+            border-radius: 20px;
+            padding: 5px 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            border: 1px solid transparent;
+
+            transition: all ease-in-out .4s;
+
+            &:hover{
+                color: $second;
+                background-color: transparent;
+                border-color: $second;
+            }
+        }
+
+        &-yellow{
+            color: black;
+            background: $main;
+            border-radius: 20px;
+            padding: 5px 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            border: 1px solid transparent;
+
+            transition: all ease-in-out .4s;
+
+            &:hover{
+                color: $main;
+                background-color: transparent;
+                border-color: $main;
+            }
+        }
+    }
+}
+
+.product{
+    &__item{
+        display: grid;
+        grid-template-columns: 80% 20%;
+        gap: 5px;
+        border-bottom: 2px dashed black;
+        padding: 5px 0;
+
+
+        &-name, &-value{
+            font-size: 12px;
+        }
+        &-value{
+            font-weight: bold;
+        }
+    }
+}
+
+.settings{
+    &__title{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    &__input{
+        padding: 3px 10px;
+        border-radius: 15px;
+        border: 1px solid $second;
+
+    }
+
+    &__label{
+        margin-left: 10px;
+        color: white;
+    }
+
+    &__info{
+        font-size: 10px;
+        color: lightgrey;
+    }
+}
+
+.stats{
+    &__value{
+        font-weight: bold;
+    }
+
+
+
+    &__title{
+        color: $second;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    &__table{
+        border-radius: 15px 15px 0 0;
+        border: 1px solid white;
+        overflow: hidden;
+
+        &-item{
+            border-bottom: 1px solid white;
+            color: white;
+            & td{
+                padding: 5px;
+            }
+        }
+
+        &-header{
+            background: white;
+            & td{
+                padding: 3px 15px;
+            }
+        }
+    }
+}
+
+.orders{
+    &__items{
+        color: white;
+    }
+
+    &__link{
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+
+
+        &:hover > .orders__table{
+            background: white;
+            color: black;
+        }
+        &:hover{
+            background: white;
+            color: black;
+        }
+    }
+
+    &__table{
+        border: 1px solid white;
+        padding: 5px 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 20% 15% 10% 5% 10% 10% 20%;
+        gap: 2px;
+    }
+}
+
+.table__header-user td{
+    padding: 5px 10px;
+    background: white;
+    color: black;
+}
+.table__body-user td{
+    padding: 5px 10px;
+}
+.table__user-btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: white;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: black;
+
+    transition: all ease-in-out .3s;
+
+    &:hover{
+        color: white;
+        border-color: white;
+        background: transparent;
+    }
+}
+
+
+.user{
+    &__input{
+        padding: 5px 10px;
+        border: 1px solid white;
+        color: white;
+        background: transparent;
+        outline: transparent;
+
+        border-radius: 10px;
+    }
+}
+
+
+.counter-list-item{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+
+    color: white;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background: darkred;
+
+    right: -10px;
+    top: -15px;
+
+    &_text{
+        color: white;
+        font-size: 12px;
+    }
+}
+
+.light-green{
+    color: lightgreen;
+}
+
+.orange{
+    color: orange;
+}

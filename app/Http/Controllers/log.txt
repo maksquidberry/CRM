@@ -1,0 +1,59 @@
+Array
+(
+)
+Array
+(
+    [account] => digitallab
+    [object] => transaction
+    [object_id] => 15
+    [action] => added
+    [time] => 1680953047
+    [verify] => 089e6134eb3acdb30afc9388bd56dbf0
+    [account_number] => 511540
+    [data] => {"transactions_history":{"type_history":"open","time":1680953048373,"value":4,"value2":7,"value3":2,"value4":1,"value5":0,"value_text":"{\"uses_payed_cert\":\"1\",\"round_whole\":\"0\",\"service_mode\":1,\"order_source\":0}","user_id":4,"spot_tablet_id":1}}
+)
+Array
+(
+    [account] => digitallab
+    [object] => transaction
+    [object_id] => 15
+    [action] => changed
+    [time] => 1680953049
+    [verify] => 697362cdb824c88a3e7b256940a40361
+    [account_number] => 511540
+    [data] => {"transactions_history":{"type_history":"additem","time":1680953049873,"value":3,"value2":1,"value3":0,"value4":0,"value5":null,"value_text":"{\"price\":3,\"unit\":\"p\",\"nodiscount\":0,\"tax\":[],\"guestNumber\":1}","user_id":4,"spot_tablet_id":1}}
+)
+Array
+(
+    [account] => digitallab
+    [object] => transaction
+    [object_id] => 15
+    [action] => changed
+    [time] => 1680953049
+    [verify] => 51bcd7faa85f069f98f0e08cba2354c4
+    [account_number] => 511540
+    [data] => {"transactions_history":{"type_history":"changeitemcount","time":1680953050488,"value":3,"value2":2,"value3":0,"value4":0,"value5":null,"value_text":"{\"guestNumber\":1,\"price\":3}","user_id":4,"spot_tablet_id":1}}
+)
+Array
+(
+    [account] => digitallab
+    [object] => transaction
+    [object_id] => 15
+    [action] => changed
+    [time] => 1680953050
+    [verify] => d39d7a27993fba7b50c8bb79a07dd7fe
+    [account_number] => 511540
+    [data] => {"transactions_history":{"type_history":"changeitemcount","time":1680953050893,"value":3,"value2":3,"value3":0,"value4":0,"value5":null,"value_text":"{\"guestNumber\":1,\"price\":3}","user_id":4,"spot_tablet_id":1}}
+)
+Array
+(
+    [account] => digitallab
+    [object] => transaction
+    [object_id] => 15
+    [action] => changed
+    [time] => 1680953050
+    [verify] => 828d77de4ff216a797f0a89b37b337bb
+    [account_number] => 511540
+    [data] => {"transactions_history":{"type_history":"changeitemcount","time":1680953051260,"value":3,"value2":4,"value3":0,"value4":0,"value5":null,"value_text":"{\"guestNumber\":1,\"price\":3}","user_id":4,"spot_tablet_id":1}}
+)
+api get123123123
